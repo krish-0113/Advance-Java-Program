@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Bean definition for Address -->
+    <bean id="addId" class="com.krishna.Address">
+        <!-- using constructor DI -->
+        <constructor-arg value="071" /> <!-- House No -->
+        <constructor-arg value="Nanded" /> <!-- City -->
+        <constructor-arg value="12345" /> <!-- Pincode -->
+
+        <!-- Property-based dependency injection -->
+        <!--
+        <property name="houseno" value="071" />
+        <property name="city" value="Nanded" />
+        <property name="pincode" value="12345" />
+        -->
+    </bean>
+
+    <!-- Bean definition for Student -->
+    <bean id="stdId" class="com.krishna.Student">
+        <!-- using constructor DI -->
+        <constructor-arg value="507" /> <!-- Roll No -->
+        <constructor-arg value="Krishna" /> <!-- Name -->
+        <constructor-arg ref="addId" /> <!-- Address injected via constructor -->
+
+        <!-- Property-based dependency injection -->
+        <!--
+        <property name="rollno" value="507" />
+        <property name="name" value="Krishna" />
+        <property name="address" ref="addId"/>  Injecting the address bean
+        -->
+    </bean>
+
+</beans>

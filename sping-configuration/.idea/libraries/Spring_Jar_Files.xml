@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Spring Jar Files">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../Spring Jar Files/commons-logging-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Spring Jar Files/spring-aop-6.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Spring Jar Files/spring-beans-6.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Spring Jar Files/spring-beans-6.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Spring Jar Files/spring-core-6.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Spring Jar Files/spring-expression-6.2.2.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../Spring Jar Files" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../Spring Jar Files" recursive="false" />
+  </library>
+</component>

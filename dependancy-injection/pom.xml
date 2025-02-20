@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example</groupId>
+  <artifactId>dependancy-injection</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>dependancy-injection Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+      <!-- Spring Context dependency -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>5.3.30</version> <!-- Or the latest version -->
+      </dependency>
+
+      <!-- Spring Beans dependency (required for ApplicationContext) -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>5.3.30</version> <!-- Or the latest version -->
+      </dependency>
+
+      <!-- Spring Core dependency (required for core functionality like BeanFactory) -->
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>5.3.30</version> <!-- Or the latest version -->
+      </dependency>
+
+<!--      &lt;!&ndash; If you are using Spring AOP (for aspect-oriented programming) &ndash;&gt;-->
+<!--      <dependency>-->
+<!--        <groupId>org.springframework</groupId>-->
+<!--        <artifactId>spring-aop</artifactId>-->
+<!--        <version>5.3.30</version> &lt;!&ndash; Or the latest version &ndash;&gt;-->
+<!--      </dependency>-->
+
+<!--      &lt;!&ndash; If you are using Spring Expression Language (SpEL) &ndash;&gt;-->
+<!--      <dependency>-->
+<!--        <groupId>org.springframework</groupId>-->
+<!--        <artifactId>spring-expression</artifactId>-->
+<!--        <version>5.3.30</version> &lt;!&ndash; Or the latest version &ndash;&gt;-->
+<!--      </dependency>-->
+
+
+  </dependencies>
+  <build>
+    <finalName>dependancy-injection</finalName>
+  </build>
+</project>
